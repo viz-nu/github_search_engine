@@ -95,7 +95,7 @@ function App() {
                        
                         <Search searchUsers={searchUsers} clearusers={clearusers} alertfn={alertfn} />
                         {loading && <Loading />}
-                        <Users data={data} />
+                       {data && <Users data={data} />}
 
                     </div>
                 </>
